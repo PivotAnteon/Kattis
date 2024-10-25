@@ -1,5 +1,9 @@
 import validators
 
 x = input()
+print(x)
 valid = validators.url(x)
-print(valid)
+if(valid):
+    print(True)
+else:
+    print(False)
