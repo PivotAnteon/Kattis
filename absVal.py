@@ -1,6 +1,12 @@
-import sys
+while True:
+    try:
+        x = input()
 
-a,b = map(int, input().split())
-for line in sys.stdin():
-    print(abs(a-b))
-    a,b = map(int, input().split())
+        parts = x.split()
+
+        a = int(parts[0])
+        b = int(parts[1])
+
+        print(abs(a-b))
+    except EOFError:
+        break
