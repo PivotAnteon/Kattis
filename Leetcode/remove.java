@@ -1,23 +1,17 @@
 class Solution {
     public static int removeElement(int[] nums, int val) {
         //check if nums has a value
-        if(nums.length <1){
+        if(nums.length < 1){
             return 0;
         }
 
         int k = 0;
-        int[] noVal = new int[nums.length];
         //find all non-val and place in new array, increment k
         for(int i = 0; i < nums.length; i++){
             if(nums[i] != val){
-                noVal[k] = nums[i];
+                nums[k] = nums[i];
                 k++;
             }
-        }
-        
-
-        for(int i = 0; i < k; i++){
-            nums[i] = noVal[i];
         }
         
         return k;
