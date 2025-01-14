@@ -10,7 +10,7 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "cl.exe",
+            "compilerPath": null,
             "intelliSenseMode": "windows-msvc-x64"
         }
     ],
