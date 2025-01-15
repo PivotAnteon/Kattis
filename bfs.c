@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <stdlib.h>
 
 void addEdge(int * tree, int location, int data){
     tree[location] = data;
@@ -33,6 +34,5 @@ void bfs(int * tree, int size, int target){
 int main(){
     int size = 9;
     int *tree = (int*)malloc(size * sizeof(int));
-    int *head = tree[0];
     return 0;
 }
